@@ -4,10 +4,10 @@ from datetime import datetime, timezone
 import requests
 
 # Channel to watch on Picarto.
-CHANNEL_NAME = "floofnfluff"
+CHANNEL_NAME = os.environ["CHANNEL_NAME"]
 
 # How often to check the Picarto API.
-CHECK_INTERVAL_SECONDS = 60
+CHECK_INTERVAL_SECONDS = 300
 
 # Discord webhook used for live/offline alerts.
 DISCORD_WEBHOOK_URL = os.environ["DISCORD_WEBHOOK_URL"]
