@@ -7,7 +7,7 @@ import requests
 CHANNEL_NAME = os.environ["CHANNEL_NAME"]
 
 # How often to check the Picarto API.
-CHECK_INTERVAL_SECONDS = 300
+CHECK_INTERVAL_SECONDS = 60
 
 # Discord webhook used for live/offline alerts.
 DISCORD_WEBHOOK_URL = os.environ["DISCORD_WEBHOOK_URL"]
